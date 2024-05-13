@@ -7,10 +7,11 @@ import org.springframework.context.annotation.Configuration;
 public class ConfigurationFile {
     @Bean
     public  Student student1() {
-        Student std = new Student();
-        std.setName("Krishna");
-        std.setRollNo(123);
-        std.setEmail("krishna@gmail.com");
-        return  std;
+
+        return new Student("krishna","kpchaulagain@gmail.com",123,address());
+    }
+@Bean
+    public Address address() {
+    return new Address("Kathmandu",12,"Jorpati");
     }
 }
