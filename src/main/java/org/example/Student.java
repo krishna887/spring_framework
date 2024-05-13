@@ -1,15 +1,13 @@
-package org.example.context;
+package org.example;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Student {
-    @Value("krishna")
     private String name;
-    @Value("kpchaulagain1999@gmail.com")
+
     private String email;
-    @Value("1")
     private int rollNo;
 
     public String getName() {
