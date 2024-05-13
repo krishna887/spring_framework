@@ -5,9 +5,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Student {
+    @Value("krishna")
     private String name;
+    @Value("krishna@gmail.com")
 
     private String email;
+    @Value("123")
     private int rollNo;
 
     public String getName() {
